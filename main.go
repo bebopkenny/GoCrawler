@@ -20,6 +20,7 @@ func main() {
 
 	router := chi.NewRouter()
 
+	// Gives the browsers the functionality of what it can do
 	router.Use(cors.Handler(cors.Options{
 		AllowedOrigins: []string{"https://*", "https://*"},
 		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
